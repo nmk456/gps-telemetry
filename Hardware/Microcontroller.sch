@@ -246,9 +246,9 @@ Wire Wire Line
 	6550 4700 6650 4700
 Wire Wire Line
 	6650 4800 6550 4800
-Text HLabel 7050 4700 2    50   BiDi ~ 0
+Text HLabel 6650 4700 2    50   BiDi ~ 0
 USB_DM
-Text HLabel 7050 4800 2    50   BiDi ~ 0
+Text HLabel 6650 4800 2    50   BiDi ~ 0
 USB_DP
 $Comp
 L Device:Crystal Y1
@@ -285,36 +285,10 @@ F 3 "" H 8100 4000 50  0001 C CNN
 	1    8100 4000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R8
-U 1 1 5EAD4044
-P 6800 4700
-F 0 "R8" V 6750 4550 50  0000 C CNN
-F 1 "22" V 6750 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6840 4690 50  0001 C CNN
-F 3 "~" H 6800 4700 50  0001 C CNN
-	1    6800 4700
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8100 4500 8100 4400
 Wire Wire Line
 	8100 4000 8100 4100
-$Comp
-L Device:R_US R9
-U 1 1 5EAD8592
-P 6800 4800
-F 0 "R9" V 6750 4650 50  0000 C CNN
-F 1 "22" V 6750 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6840 4790 50  0001 C CNN
-F 3 "~" H 6800 4800 50  0001 C CNN
-	1    6800 4800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7050 4700 6950 4700
-Wire Wire Line
-	7050 4800 6950 4800
 $Comp
 L Device:C C5
 U 1 1 5EADC15C
