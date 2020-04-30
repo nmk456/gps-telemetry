@@ -566,9 +566,9 @@ F 3 "" H 8250 5600 50  0001 C CNN
 	1    8250 5600
 	0    1    1    0   
 $EndComp
-Text Label 8200 5800 0    50   ~ 0
+Text Label 8450 5800 2    50   ~ 0
 SWCLK
-Text Label 8200 5700 0    50   ~ 0
+Text Label 8450 5700 2    50   ~ 0
 SWDIO
 $Comp
 L Switch:SW_DIP_x02 SW1
@@ -703,7 +703,7 @@ $Comp
 L Device:LED D1
 U 1 1 5EBC4511
 P 9550 4250
-F 0 "D1" V 9543 4133 50  0000 R CNN
+F 0 "D1" V 9550 4200 50  0000 R CNN
 F 1 "LED" V 9498 4133 50  0001 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 9550 4250 50  0001 C CNN
 F 3 "~" H 9550 4250 50  0001 C CNN
@@ -714,7 +714,7 @@ $Comp
 L Device:LED D2
 U 1 1 5EBC49F9
 P 10000 4250
-F 0 "D2" V 9993 4133 50  0000 R CNN
+F 0 "D2" V 10000 4200 50  0000 R CNN
 F 1 "LED" V 9948 4133 50  0001 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 10000 4250 50  0001 C CNN
 F 3 "~" H 10000 4250 50  0001 C CNN
@@ -795,9 +795,9 @@ Wire Wire Line
 Wire Wire Line
 	5150 4100 5250 4100
 Wire Wire Line
-	5150 4200 5250 4200
+	5100 4200 5250 4200
 Wire Wire Line
-	5150 4300 5250 4300
+	5100 4300 5250 4300
 Wire Wire Line
 	1650 4650 1550 4650
 Wire Wire Line
@@ -870,8 +870,6 @@ Wire Wire Line
 Wire Wire Line
 	9600 5900 9500 5900
 Wire Wire Line
-	9600 5700 9500 5700
-Wire Wire Line
 	9600 5800 9500 5800
 $Comp
 L power:GND #PWR017
@@ -895,17 +893,17 @@ F 3 "" H 9600 5900 50  0001 C CNN
 	1    9600 5900
 	0    1    -1   0   
 $EndComp
-Text Label 9500 5700 0    50   ~ 0
+Text Label 9600 5700 2    50   ~ 0
 TX
-Text Label 9500 5800 0    50   ~ 0
+Text Label 9600 5800 2    50   ~ 0
 RX
 Wire Wire Line
-	6550 4500 6700 4500
+	6550 4500 6650 4500
 Wire Wire Line
-	6550 4600 6700 4600
-Text Label 6700 4600 2    50   ~ 0
+	6550 4600 6650 4600
+Text Label 5100 4300 0    50   ~ 0
 RX
-Text Label 6700 4500 2    50   ~ 0
+Text Label 5100 4200 0    50   ~ 0
 TX
 $Comp
 L Connector_Generic:Conn_01x04 J3
@@ -977,10 +975,10 @@ Text HLabel 5150 4000 0    50   BiDi ~ 0
 B4
 Text HLabel 5150 4100 0    50   BiDi ~ 0
 B5
-Text HLabel 5150 4200 0    50   BiDi ~ 0
-B6
-Text HLabel 5150 4300 0    50   BiDi ~ 0
-B7
+Text HLabel 6650 4500 2    50   BiDi ~ 0
+A9
+Text HLabel 6650 4600 2    50   BiDi ~ 0
+A10
 Text HLabel 5150 4600 0    50   BiDi ~ 0
 B10
 Text HLabel 5150 4700 0    50   BiDi ~ 0
@@ -1008,4 +1006,6 @@ F 3 "https://www.hirose.com/product/en/download_file/key_name/DM3/category/Catal
 	1    2450 4150
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	9600 5700 9500 5700
 $EndSCHEMATC
