@@ -1,0 +1,339 @@
+EESchema Schematic File Version 4
+LIBS:GPS Telemetry-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 5 5
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:USB_B_Micro J5
+U 1 1 5EAD03FF
+P 3300 2800
+F 0 "J5" H 3150 3150 50  0000 C CNN
+F 1 "USB_B_Micro" H 3357 3176 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3450 2750 50  0001 C CNN
+F 3 "~" H 3450 2750 50  0001 C CNN
+	1    3300 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2800 3750 2800
+Wire Wire Line
+	3750 2900 3600 2900
+Wire Wire Line
+	3600 2600 3700 2600
+Wire Wire Line
+	3300 3200 3300 3300
+Wire Wire Line
+	3200 3200 3200 3300
+Wire Wire Line
+	3200 3300 3300 3300
+Wire Wire Line
+	3200 3400 3200 3300
+Connection ~ 3200 3300
+$Comp
+L power:GND #PWR0118
+U 1 1 5EAD18D0
+P 3200 3400
+F 0 "#PWR0118" H 3200 3150 50  0001 C CNN
+F 1 "GND" H 3205 3227 50  0000 C CNN
+F 2 "" H 3200 3400 50  0001 C CNN
+F 3 "" H 3200 3400 50  0001 C CNN
+	1    3200 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR0119
+U 1 1 5EAD1AE9
+P 3700 2600
+F 0 "#PWR0119" H 3700 2450 50  0001 C CNN
+F 1 "VBUS" V 3700 2750 50  0000 L CNN
+F 2 "" H 3700 2600 50  0001 C CNN
+F 3 "" H 3700 2600 50  0001 C CNN
+	1    3700 2600
+	0    1    1    0   
+$EndComp
+Text HLabel 4200 2800 2    50   BiDi ~ 0
+USB_DP
+Text HLabel 4200 2900 2    50   BiDi ~ 0
+USB_DM
+$Comp
+L power:+3V3 #PWR0120
+U 1 1 5EAD1F00
+P 8950 3550
+F 0 "#PWR0120" H 8950 3400 50  0001 C CNN
+F 1 "+3V3" V 8950 3800 50  0000 C CNN
+F 2 "" H 8950 3550 50  0001 C CNN
+F 3 "" H 8950 3550 50  0001 C CNN
+	1    8950 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VBUS #PWR0121
+U 1 1 5EAD216D
+P 6150 3950
+F 0 "#PWR0121" H 6150 3800 50  0001 C CNN
+F 1 "VBUS" H 6165 4123 50  0000 C CNN
+F 2 "" H 6150 3950 50  0001 C CNN
+F 3 "" H 6150 3950 50  0001 C CNN
+	1    6150 3950
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 5EAD22ED
+P 7550 4150
+F 0 "#PWR0122" H 7550 3900 50  0001 C CNN
+F 1 "GND" H 7555 3977 50  0000 C CNN
+F 2 "" H 7550 4150 50  0001 C CNN
+F 3 "" H 7550 4150 50  0001 C CNN
+	1    7550 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R13
+U 1 1 5EC1771A
+P 3900 2800
+F 0 "R13" V 3850 2650 50  0000 C CNN
+F 1 "22" V 3850 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3940 2790 50  0001 C CNN
+F 3 "~" H 3900 2800 50  0001 C CNN
+	1    3900 2800
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_US R14
+U 1 1 5EC1819D
+P 3900 2900
+F 0 "R14" V 3950 2750 50  0000 C CNN
+F 1 "22" V 3950 3050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3940 2890 50  0001 C CNN
+F 3 "~" H 3900 2900 50  0001 C CNN
+	1    3900 2900
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4050 2900 4200 2900
+Wire Wire Line
+	4200 2800 4050 2800
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5EAC9A6A
+P 3350 4900
+F 0 "J6" H 3430 4846 50  0000 L CNN
+F 1 "Conn_01x02" H 3430 4801 50  0001 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3350 4900 50  0001 C CNN
+F 3 "~" H 3350 4900 50  0001 C CNN
+	1    3350 4900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J7
+U 1 1 5EAC9ED6
+P 3350 5200
+F 0 "J7" H 3430 5146 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 3430 5101 50  0001 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3350 5200 50  0001 C CNN
+F 3 "~" H 3350 5200 50  0001 C CNN
+	1    3350 5200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 4900 3650 4900
+Wire Wire Line
+	3650 4900 3650 5200
+Wire Wire Line
+	3650 5200 3550 5200
+Wire Wire Line
+	3550 5000 3750 5000
+Wire Wire Line
+	3750 5000 3750 5300
+Wire Wire Line
+	3750 5300 3550 5300
+Wire Wire Line
+	3650 4900 3850 4900
+Connection ~ 3650 4900
+Wire Wire Line
+	3750 5000 3850 5000
+Connection ~ 3750 5000
+$Comp
+L power:+BATT #PWR027
+U 1 1 5EA9DCB8
+P 3850 4900
+F 0 "#PWR027" H 3850 4750 50  0001 C CNN
+F 1 "+BATT" V 3850 5000 50  0000 L CNN
+F 2 "" H 3850 4900 50  0001 C CNN
+F 3 "" H 3850 4900 50  0001 C CNN
+	1    3850 4900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR028
+U 1 1 5EA9E410
+P 3850 5000
+F 0 "#PWR028" H 3850 4750 50  0001 C CNN
+F 1 "GND" V 3850 4800 50  0000 C CNN
+F 2 "" H 3850 5000 50  0001 C CNN
+F 3 "" H 3850 5000 50  0001 C CNN
+	1    3850 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+BATT #PWR029
+U 1 1 5EA9E900
+P 6150 3150
+F 0 "#PWR029" H 6150 3000 50  0001 C CNN
+F 1 "+BATT" H 6165 3323 50  0000 C CNN
+F 2 "" H 6150 3150 50  0001 C CNN
+F 3 "" H 6150 3150 50  0001 C CNN
+	1    6150 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Schottky_x2_KCom_AAK D4
+U 1 1 5EA9F1F6
+P 6150 3550
+F 0 "D4" V 6150 3629 50  0000 L CNN
+F 1 "D_Schottky_x2_KCom_AAK" V 6105 3629 50  0001 L CNN
+F 2 "Package_SON:HUSON-3-1EP_2x2mm_P1.3mm_EP1.1x1.6mm" H 6150 3550 50  0001 C CNN
+F 3 "~" H 6150 3550 50  0001 C CNN
+	1    6150 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6150 3950 6150 3850
+Wire Wire Line
+	6150 3250 6150 3150
+$Comp
+L Regulator_Linear:LF33_TO252 U7
+U 1 1 5EAA2289
+P 7550 3550
+F 0 "U7" H 7550 3792 50  0000 C CNN
+F 1 "NCP5501" H 7550 3701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7550 3775 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/c4/0e/7e/2a/be/bc/4c/bd/CD00000546.pdf/files/CD00000546.pdf/jcr:content/translations/en.CD00000546.pdf" H 7550 3500 50  0001 C CNN
+	1    7550 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C25
+U 1 1 5EB1B1C0
+P 6550 3800
+F 0 "C25" H 6665 3846 50  0000 L CNN
+F 1 "10u" H 6665 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6588 3650 50  0001 C CNN
+F 3 "~" H 6550 3800 50  0001 C CNN
+	1    6550 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C26
+U 1 1 5EB1B580
+P 6950 3800
+F 0 "C26" H 7065 3846 50  0000 L CNN
+F 1 "0.1u" H 7065 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 3650 50  0001 C CNN
+F 3 "~" H 6950 3800 50  0001 C CNN
+	1    6950 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 3550 6550 3550
+Wire Wire Line
+	6550 3550 6550 3650
+Wire Wire Line
+	6550 3550 6950 3550
+Wire Wire Line
+	6950 3550 6950 3650
+Connection ~ 6550 3550
+Wire Wire Line
+	6550 3950 6550 4050
+Wire Wire Line
+	6550 4050 6950 4050
+Wire Wire Line
+	6950 4050 6950 3950
+Wire Wire Line
+	7250 3550 6950 3550
+Connection ~ 6950 3550
+Wire Wire Line
+	6950 4050 7550 4050
+Wire Wire Line
+	7550 4050 7550 3850
+Connection ~ 6950 4050
+Wire Wire Line
+	7550 4050 7550 4150
+Connection ~ 7550 4050
+Wire Wire Line
+	8050 3950 8050 4050
+Wire Wire Line
+	8050 4050 7550 4050
+Wire Wire Line
+	7850 3550 8050 3550
+Wire Wire Line
+	8050 3550 8050 3650
+Connection ~ 8050 3550
+$Comp
+L Device:C C28
+U 1 1 5EB210E0
+P 8450 3800
+F 0 "C28" H 8565 3846 50  0000 L CNN
+F 1 "10u" H 8565 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8488 3650 50  0001 C CNN
+F 3 "~" H 8450 3800 50  0001 C CNN
+	1    8450 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8050 4050 8450 4050
+Wire Wire Line
+	8450 4050 8450 3950
+Connection ~ 8050 4050
+Wire Wire Line
+	8450 3650 8450 3550
+Wire Wire Line
+	8050 3550 8450 3550
+Connection ~ 8450 3550
+$Comp
+L Device:C C29
+U 1 1 5EB2402F
+P 8850 3800
+F 0 "C29" H 8965 3846 50  0000 L CNN
+F 1 "0.1u" H 8965 3755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8888 3650 50  0001 C CNN
+F 3 "~" H 8850 3800 50  0001 C CNN
+	1    8850 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 3550 8850 3650
+Wire Wire Line
+	8450 3550 8850 3550
+Wire Wire Line
+	8850 3950 8850 4050
+Wire Wire Line
+	8850 4050 8450 4050
+Connection ~ 8450 4050
+Wire Wire Line
+	8850 3550 8950 3550
+Connection ~ 8850 3550
+$Comp
+L Device:CP C27
+U 1 1 5EB37EC1
+P 8050 3800
+F 0 "C27" H 8168 3846 50  0000 L CNN
+F 1 "47u" H 8168 3755 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 8088 3650 50  0001 C CNN
+F 3 "~" H 8050 3800 50  0001 C CNN
+	1    8050 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
