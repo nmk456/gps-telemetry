@@ -20,7 +20,7 @@ U 1 1 5EAD03FF
 P 3300 2800
 F 0 "J5" H 3150 3150 50  0000 C CNN
 F 1 "USB_B_Micro" H 3357 3176 50  0001 C CNN
-F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 3450 2750 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Molex_47346-0001" H 3450 2750 50  0001 C CNN
 F 3 "~" H 3450 2750 50  0001 C CNN
 	1    3300 2800
 	1    0    0    -1  
@@ -131,7 +131,7 @@ U 1 1 5EAC9ED6
 P 3350 5200
 F 0 "J7" H 3430 5146 50  0000 L CNN
 F 1 "Screw_Terminal_01x02" H 3430 5101 50  0001 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 3350 5200 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" H 3350 5200 50  0001 C CNN
 F 3 "~" H 3350 5200 50  0001 C CNN
 	1    3350 5200
 	-1   0    0    -1  
