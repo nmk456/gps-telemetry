@@ -665,4 +665,5 @@ Text HLabel 5200 3650 0    50   Output ~ 0
 INT2_AG
 Text HLabel 5200 3750 0    50   Output ~ 0
 DEN_AG
+NoConn ~ 8800 3450
 $EndSCHEMATC
